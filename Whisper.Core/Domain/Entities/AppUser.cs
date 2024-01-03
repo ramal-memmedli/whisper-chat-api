@@ -11,5 +11,7 @@ namespace Whisper.Core.Domain.Entities
     public class AppUser : IdentityUser, IEntity
     {
         public string PublicKey { get; set; } = string.Empty;
+        public List<Message> SentMessages { get; set; }
+        public List<Message> ReceivedMessages { get; set; }
     }
 }
